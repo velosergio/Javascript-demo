@@ -1,0 +1,26 @@
+{
+  "name": "spa",
+  "version": "1.0.0",
+  "description": "curso spa de platzi",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Sergio Veloza",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.2.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

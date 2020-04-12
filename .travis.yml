@@ -1,0 +1,21 @@
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+  node_js:
+    - '13'
+  git:
+    depth: 3
+  script:
+    -yarn build
+  deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    keep-history: true
+    edge: true,
+    local-dir: dist/
+    target-branch: gh-pages
+    commit_message: "Deploy release"
+    on:
+      branch: master
